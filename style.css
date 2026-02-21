@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: Calibri, Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    width: 1100px;
+    max-width: 95%;
+    margin: 0 auto 60px auto;
+}
+
+/* HEADER */
+
+.header {
+    background: #ffffff;
+    text-align: center;
+    padding: 60px 20px 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 20px 0 6px;
+    font-weight: 500;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 14px;
+}
+
+.social-links a {
+    margin: 0 8px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0073b1;
+}
+
+/* SECTION TITLE */
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 60px 0 20px 0;
+}
+
+/* ABOUT */
+
+#about {
+    font-size: 18px;
+    margin: 50px 0;
+}
+
+/* EXPERIENCE GRID */
+
+.experience-section {
+    position: relative;
+}
+
+.experience-section::before {
+    content: "";
+    position: absolute;
+    left: 180px;
+    top: 60px;
+    bottom: 0;
+    width: 2px;
+    background: #cfcfcf;
+}
+
+.exp-row {
+    display: grid;
+    grid-template-columns: 160px 40px 1fr;
+    align-items: start;
+    margin-bottom: 35px;
+}
+
+.exp-date {
+    text-align: right;
+    font-size: 14px;
+    color: #999;
+    white-space: nowrap;
+    padding-top: 4px;
+}
+
+.exp-divider {
+    position: relative;
+}
+
+.exp-dot {
+    width: 10px;
+    height: 10px;
+    background: #cfcfcf;
+    border-radius: 50%;
+    margin: 6px auto 0 auto;
+}
+
+.exp-content h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.exp-content h4 {
+    margin: 2px 0 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+}
+
+.exp-content p,
+.exp-content li {
+    margin: 4px 0;
+    font-size: 15px;
+}
+
+/* PROJECTS */
+
+.project-item {
+    margin-bottom: 25px;
+}
+
+.project-item h3 {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.project-item p,
+.project-item li {
+    margin: 4px 0;
+}
+.education-section {
+    margin-top: 40px;
+}
+
+#education p {
+    margin: 4px 0;
+}
+
+/* LINKS */
+
+a {
+    color: #0645ad;
+    text-decoration: underline;
+}
+
+a:hover {
+    opacity: 0.85;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .experience-section::before {
+        display: none;
+    }
+
+    .exp-row {
+        grid-template-columns: 1fr;
+    }
+
+    .exp-date {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .exp-divider {
+        display: none;
+    }
+}
