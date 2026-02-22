@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yash</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Jariwala | Data Analyst</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
-
 <body>
 
-<header class="header">
-    <img id="profileImage" class="profile-img" alt="Profile">
+  <header class="header">
+    <img id="profileImage" class="profile-img" alt="Profile photo of Yash Jariwala">
     <h1 id="name"></h1>
     <p id="tagline" class="tagline"></p>
-    <div id="socialLinks" class="social-links"></div>
-</header>
+    <div id="socialLinks" class="social-links" aria-label="Social links"></div>
+  </header>
 
-<section class="container">
+  <main class="container">
 
-    <section id="about"></section>
-
-    <section class="experience-section">
-        <h2 class="section-title">Experience</h2>
-        <div id="experience"></div>
+    <section class="about-section" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-title">About</h2>
+      <div id="about"></div>
     </section>
 
-    <section class="projects-section">
-        <h2 class="section-title">Projects</h2>
-        <div id="projects"></div>
+    <section class="experience-section" aria-labelledby="experience-heading">
+      <h2 id="experience-heading" class="section-title">Experience</h2>
+      <div id="experience"></div>
     </section>
 
-    <section class="education-section">
-        <h2 class="section-title">Education</h2>
-        <div id="education"></div>
+    <section class="projects-section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="section-title">Projects</h2>
+      <div id="projects"></div>
     </section>
 
-</section>
+    <section class="skills-section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="section-title">Skills</h2>
+      <div id="skills"></div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="education-section" aria-labelledby="education-heading">
+      <h2 id="education-heading" class="section-title">Education</h2>
+      <div id="education"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
