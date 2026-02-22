@@ -1,36 +1,35 @@
 {
   "profile": {
     "name": "Yash Jariwala",
-    "tagline": "Data Analyst | Business Reporting & Automation | ERP Data Integration",
+    "tagline": "Data Analyst | Business Reporting & Automation",
     "image": "assets/profile.jpg",
     "social": [
       { "icon": "fab fa-linkedin", "url": "https://www.linkedin.com/in/yash-jariwala-ai/" },
       { "icon": "fab fa-github", "url": "https://github.com/yashjariwala9" },
-      { "icon": "fas fa-envelope", "url": "mailto:yashjariwala730@gmail.com" }
+      { "icon": "fas fa-envelope", "url": "mailto:yashjariwala730@gmail.com" },
+      { "icon": "fas fa-rss", "url": "https://yashjariwala.substack.com/" }
     ]
   },
-
-  "about": "Data analyst with experience in business reporting and automation. Skilled at transforming raw operational data into structured, actionable insights that improve efficiency and decision-making.\n\nExperienced in ERP data integration, dashboard development, and financial reporting systems. Passionate about data-driven problem solving and continuous growth in analytics and data science.",
-
+  "about": "Data analyst with hands-on experience in business reporting, ERP data integration, and workflow automation. Skilled at transforming raw operational and financial data into structured, actionable insights that improve efficiency and decision-making.\n\nExperienced in building interactive Power BI dashboards, automating data pipelines with Python and Google Apps Script, and integrating ERP systems (Tally ERP, Odoo) with modern reporting tools.\n\nCurrently deepening expertise in data science fundamentals — including linear algebra, statistics & probability, calculus, advanced SQL, advanced Python, and classical machine learning algorithms — with a goal of transitioning into a data science or machine learning role.",
   "experience": [
     {
       "date": "Jun 2025 – Present",
       "role": "Data Analyst",
       "company": "Onewin Management Consultants India Pvt. Ltd.",
-      "description": "- Analyzed and reported financial data for a textile manufacturing client, focusing on sales, cash flow, and trial balance datasets.\n- Structured and cleaned financial data to build Excel reports and interactive Power BI dashboards that improved visibility into key business metrics.\n- Developed a Power BI dashboard to track employee working hours, enhancing productivity monitoring and workforce management.\n- Integrated ERP data by connecting Tally ERP to Power BI via ODBC for real-time reporting.\n- Processed and managed Odoo ERP datasets using Python and PostgreSQL to enable structured reporting and business analysis.\n- Built automated data collection and reporting workflows using Google Forms and Google Sheets, consolidating multiple inputs into centralized reporting systems."
+      "description": "- Analyzed and reported financial data for a textile manufacturing client, focusing on sales, cash flow, and trial balance datasets.\n- Structured and cleaned financial datasets to build Excel reports and interactive Power BI dashboards that improved visibility into key business metrics and supported faster decision-making.\n- Developed a Power BI dashboard to track employee working hours, enhancing productivity monitoring and workforce management.\n- Integrated ERP data by connecting Tally ERP to Power BI via ODBC for real-time financial reporting.\n- Processed and managed Odoo ERP datasets using Python and PostgreSQL to enable structured reporting and business analysis.\n- Built automated data collection and reporting workflows using Google Forms, Google Sheets, and Google Apps Script, consolidating multiple inputs into centralized reporting systems and generating actionable insights."
     }
   ],
-
   "projects": [
     {
       "title": "E-Commerce Data Analytics",
+      "url": "https://github.com/yashjariwala9/e-commerce-data-analytics",
       "description": "Developed an end-to-end analytics solution by generating and preprocessing synthetic e-commerce datasets using Python (Pandas, Faker).\n\nDesigned an interactive Power BI dashboard using DAX measures to monitor KPIs including revenue growth, gross margin, average order value (AOV), customer lifetime value (CLTV), and return rates.\n\nDelivered actionable business insights on sales performance, customer segmentation, logistics efficiency, and workforce productivity through structured dashboard reporting."
     },
     {
       "title": "Supermarket Sales Analysis",
+      "url": "https://github.com/yashjariwala9/sales-analysis-sql",
       "description": "Automated data import from CSV and Excel files into PostgreSQL using Python (Pandas).\n\nExecuted complex SQL queries using Common Table Expressions (CTEs) and aggregate functions to identify top-performing products, regions, and customer segments.\n\nAnalyzed order trends, shipping efficiency, and customer behavior patterns to generate data-driven recommendations for sales optimization and logistics improvement."
     }
   ],
-
   "education": "**Bachelor of Computer Applications** – Veer Narmad South Gujarat University, Surat, India (2022–2025)\n\nMajor: Computer Science"
 }
