@@ -23,43 +23,55 @@ body {
 /* ── HEADER ── */
 .header {
     background: #ffffff;
-    text-align: center;
-    padding: 60px 20px 40px;
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 20px;
+    padding: 48px 40px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .profile-img {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    display: block;
-    margin: 0 auto;
+    flex-shrink: 0;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
     font-size: 32px;
-    margin: 20px 0 6px;
-    font-weight: 500;
+    margin: 0 0 6px;
+    font-weight: 600;
 }
 
 .tagline {
-    font-size: 18px;
-    color: #666;
+    font-size: 16px;
+    color: #555;
     margin: 0 0 16px;
 }
 
 .social-links {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 16px;
     flex-wrap: wrap;
 }
 
 .social-links a {
     font-size: 20px;
-    color: #333;
+    color: #444;
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -269,18 +281,36 @@ a:hover {
     margin-top: 60px;
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 768px) {
     .container {
         padding: 0 16px;
     }
 
+    .header {
+        padding: 32px 20px;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
     h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .tagline {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .section-title {
@@ -322,11 +352,11 @@ a:hover {
 
 @media (max-width: 480px) {
     .profile-img {
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
     }
 
     h1 {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
