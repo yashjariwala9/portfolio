@@ -2,7 +2,7 @@
   "profile": {
     "name": "Yash",
     "tagline": "Data Analyst | Business Reporting & Automation",
-    "image": "",
+    "image": "assets/YH.png",
     "social": [
       { "icon": "fab fa-linkedin", "url": "https://www.linkedin.com/in/yash-jariwala-ai/" },
       { "icon": "fab fa-github", "url": "https://github.com/yashjariwala9" },
@@ -33,6 +33,7 @@
   ],
   "education": "**Bachelor of Computer Applications** - Veer Narmad South Gujarat University, Surat, India (2022-2025)\n\nMajor: Computer Science"
 }
+
 
 
 
