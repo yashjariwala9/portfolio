@@ -10,7 +10,7 @@
       { "icon": "fas fa-rss", "url": "https://yashjariwala.substack.com/" }
     ]
   },
-  "about": "Hands-on data analyst with experience in business reporting, ERP data integration, and workflow automation. I take unrefined business and financial data and turn it into organized, actionable information.\n\nWell-versed in creating interactive Power BI dashboards, automating data flows using Python and Google Apps Script, and connecting ERP software (Tally ERP, Odoo) to modern business reporting tools.\n\nPresently expanding my knowledge in data science — linear algebra, statistics and probability, calculus, advanced SQL, advanced Python, and machine learning algorithms — with the aim of moving into a data science or machine learning role.",
+  "about": "Hands-on data analyst with experience in business reporting, ERP data integration, and workflow automation. I take unrefined business and financial data and turn it into organized, actionable information.\n\nWell-versed in creating interactive Power BI dashboards, automating data flows using Python and Google Apps Script, and connecting ERP software (Tally ERP, Odoo) to modern business reporting tools.\n\nPresently expanding my knowledge in data science like linear algebra, statistics and probability, calculus, advanced SQL, advanced Python, and machine learning algorithms — with the aim of moving into a data science or machine learning role.",
   "experience": [
     {
       "date": "Jun 2025 – Present",
@@ -33,4 +33,5 @@
   ],
   "education": "**Bachelor of Computer Applications** – Veer Narmad South Gujarat University, Surat, India (2022–2025)\n\nMajor: Computer Science"
 }
+
 
