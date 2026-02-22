@@ -1,25 +1,32 @@
+/* ── RESET & BASE ── */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Calibri, Arial, sans-serif;
     background: #f5f5f5;
     color: #222;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
+/* ── LAYOUT ── */
 .container {
     width: 1100px;
     max-width: 95%;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 80px auto;
+    padding: 0 20px;
 }
 
-/* HEADER */
-
+/* ── HEADER ── */
 .header {
     background: #ffffff;
     text-align: center;
     padding: 60px 20px 40px;
     border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
 }
 
 .profile-img {
@@ -27,6 +34,8 @@ body {
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
 h1 {
@@ -38,37 +47,51 @@ h1 {
 .tagline {
     font-size: 18px;
     color: #666;
-    margin-bottom: 14px;
+    margin: 0 0 16px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
 .social-links a {
-    margin: 0 8px;
     font-size: 20px;
     color: #333;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .social-links a:hover {
     color: #0073b1;
 }
 
-/* SECTION TITLE */
-
+/* ── SECTION TITLES ── */
 .section-title {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
-    margin: 60px 0 20px 0;
+    margin: 56px 0 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0e0e0;
 }
 
-/* ABOUT */
+/* ── ABOUT ── */
+.about-section {
+    margin-top: 20px;
+}
 
 #about {
-    font-size: 18px;
-    margin: 50px 0;
+    font-size: 16px;
+    color: #333;
 }
 
-/* EXPERIENCE GRID */
+#about p {
+    margin: 0 0 14px;
+}
 
+/* ── EXPERIENCE TIMELINE ── */
 .experience-section {
     position: relative;
 }
@@ -77,99 +100,192 @@ h1 {
     content: "";
     position: absolute;
     left: 180px;
-    top: 60px;
-    bottom: 0;
+    top: 90px;
+    bottom: 10px;
     width: 2px;
-    background: #cfcfcf;
+    background: #e0e0e0;
+    z-index: 0;
 }
 
 .exp-row {
     display: grid;
     grid-template-columns: 160px 40px 1fr;
     align-items: start;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+    position: relative;
 }
 
 .exp-date {
     text-align: right;
-    font-size: 14px;
-    color: #999;
+    font-size: 13px;
+    color: #888;
     white-space: nowrap;
-    padding-top: 4px;
+    padding-top: 5px;
+    padding-right: 8px;
 }
 
 .exp-divider {
+    display: flex;
+    justify-content: center;
     position: relative;
+    z-index: 1;
 }
 
 .exp-dot {
-    width: 10px;
-    height: 10px;
-    background: #cfcfcf;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border: 2px solid #aaa;
     border-radius: 50%;
-    margin: 6px auto 0 auto;
+    margin-top: 4px;
+    flex-shrink: 0;
 }
 
 .exp-content h3 {
-    margin: 0;
-    font-size: 18px;
+    margin: 0 0 2px;
+    font-size: 17px;
     font-weight: 600;
 }
 
 .exp-content h4 {
-    margin: 2px 0 6px;
-    font-size: 15px;
+    margin: 0 0 10px;
+    font-size: 14px;
     font-weight: 500;
-    color: #555;
+    color: #666;
 }
 
-.exp-content p,
+.exp-content ul {
+    margin: 6px 0 0;
+    padding-left: 20px;
+}
+
 .exp-content li {
-    margin: 4px 0;
     font-size: 15px;
+    margin-bottom: 5px;
+    color: #333;
 }
 
-/* PROJECTS */
-
+/* ── PROJECTS ── */
 .project-item {
-    margin-bottom: 25px;
+    margin-bottom: 32px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
 }
 
 .project-item h3 {
-    margin: 0 0 6px 0;
-    font-size: 18px;
+    margin: 0 0 8px;
+    font-size: 17px;
     font-weight: 600;
 }
 
-.project-item p,
-.project-item li {
-    margin: 4px 0;
+.project-item h3 a {
+    color: #222;
+    text-decoration: none;
 }
+
+.project-item h3 a:hover {
+    color: #0073b1;
+}
+
+.project-item p {
+    font-size: 15px;
+    margin: 0 0 10px;
+    color: #444;
+}
+
+.project-item p:last-child {
+    margin-bottom: 0;
+}
+
+/* ── SKILLS ── */
+.skills-section {
+    margin-bottom: 20px;
+}
+
+.skills-group {
+    margin-bottom: 20px;
+}
+
+.skills-subheading {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+.skills-list--learning li {
+    background: #f0f6ff;
+    border-color: #c2d8f5;
+    color: #1a4a80;
+}
+
+/* ── EDUCATION ── */
 .education-section {
-    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 #education p {
     margin: 4px 0;
+    font-size: 15px;
 }
 
-/* LINKS */
-
+/* ── GLOBAL LINKS ── */
 a {
     color: #0645ad;
     text-decoration: underline;
 }
 
 a:hover {
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
-/* RESPONSIVE */
+/* ── ERROR STATE ── */
+.error-msg {
+    text-align: center;
+    color: #c0392b;
+    font-size: 16px;
+    margin-top: 60px;
+}
 
+/* ── RESPONSIVE ── */
 @media (max-width: 768px) {
-
     .container {
-        width: 95%;
+        padding: 0 16px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin-top: 40px;
     }
 
     .experience-section::before {
@@ -178,14 +294,39 @@ a:hover {
 
     .exp-row {
         grid-template-columns: 1fr;
+        gap: 4px;
     }
 
     .exp-date {
         text-align: left;
-        margin-bottom: 5px;
+        padding-right: 0;
+        font-size: 12px;
     }
 
     .exp-divider {
         display: none;
+    }
+
+    .exp-content h3 {
+        font-size: 16px;
+    }
+
+    .project-item {
+        padding: 16px;
+    }
+
+    .skills-list {
+        gap: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    h1 {
+        font-size: 22px;
     }
 }
