@@ -23,7 +23,7 @@
     {
       "title": "E-Commerce Data Analytics",
       "url": "https://github.com/yashjariwala9/e-commerce-data-analytics",
-      "description": "I built an analytics system from start to finish. I used Python (mainly Pandas and Faker) to generate and process a realistic e-commerce dataset.\n\nI built an interactive Power BI dashboard using DAX measures to track key metrics: revenue, gross margin, average order value, customer lifetime value, and return rates.\n\nI used the dashboard to produce reports that help understand what is happening with sales, customer segmentation, logistics, and employee productivity."
+      "description": "built an analytics system from start to finish. I used Python (mainly Pandas and Faker) to generate and process a realistic e-commerce dataset.\n\nbuilt an interactive Power BI dashboard using DAX measures to track key metrics: revenue, gross margin, average order value, customer lifetime value, and return rates.\n\nused the dashboard to produce reports that help understand what is happening with sales, customer segmentation, logistics, and employee productivity."
     },
     {
       "title": "Supermarket Sales Analysis",
@@ -33,4 +33,5 @@
   ],
   "education": "**Bachelor of Computer Applications** - Veer Narmad South Gujarat University, Surat, India (2022-2025)\n\nMajor: Computer Science"
 }
+
 
