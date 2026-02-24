@@ -211,47 +211,6 @@ h1 {
     margin-bottom: 0;
 }
 
-/* ── SKILLS ── */
-.skills-section {
-    margin-bottom: 20px;
-}
-
-.skills-group {
-    margin-bottom: 20px;
-}
-
-.skills-subheading {
-    font-size: 15px;
-    font-weight: 600;
-    color: #555;
-    margin: 0 0 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.skills-list li {
-    background: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 4px 12px;
-    font-size: 14px;
-    color: #333;
-}
-
-.skills-list--learning li {
-    background: #f0f6ff;
-    border-color: #c2d8f5;
-    color: #1a4a80;
-}
 
 /* ── EDUCATION ── */
 .education-section {
@@ -265,8 +224,8 @@ h1 {
 
 /* ── GLOBAL LINKS ── */
 a {
-    color: #0645ad;
-    text-decoration: underline;
+    color: inherit;
+    text-decoration: none;
 }
 
 a:hover {
@@ -281,6 +240,7 @@ a:hover {
     margin-top: 60px;
 }
 
+/* ── RESPONSIVE ── */
 @media (max-width: 768px) {
     .container {
         padding: 0 16px;
@@ -343,10 +303,6 @@ a:hover {
 
     .project-item {
         padding: 16px;
-    }
-
-    .skills-list {
-        gap: 6px;
     }
 }
 
