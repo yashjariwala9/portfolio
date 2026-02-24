@@ -2,7 +2,7 @@ const data = {
   profile: {
     name: "Yash",
     tagline: "Data Analyst | Business Reporting & Automation",
-    image: "assets/YH.png",
+    image: "assets/icon.png",
     social: [
       { icon: "fab fa-linkedin", url: "https://www.linkedin.com/in/yash-jariwala-ai/" },
       { icon: "fab fa-github",   url: "https://github.com/yashjariwala9" },
