@@ -10,16 +10,36 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("name").textContent = data.profile.name;
   document.getElementById("tagline").textContent = data.profile.tagline;
 
+  // Populate sticky bar name
+  document.getElementById("stickyName").textContent = data.profile.name;
+
+  // Build social links (header + sticky bar)
   const socialContainer = document.getElementById("socialLinks");
+  const stickySocial = document.getElementById("stickySocial");
+
   data.profile.social.forEach(link => {
-    const a = document.createElement("a");
-    a.href = link.url;
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
-    a.setAttribute("aria-label", link.url);
-    a.innerHTML = `<i class="${link.icon}" aria-hidden="true"></i>`;
-    socialContainer.appendChild(a);
+    [socialContainer, stickySocial].forEach(container => {
+      const a = document.createElement("a");
+      a.href = link.url;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.setAttribute("aria-label", link.url);
+      a.innerHTML = `<i class="${link.icon}" aria-hidden="true"></i>`;
+      container.appendChild(a);
+    });
   });
+
+  // Sticky bar on scroll
+  const stickyBar = document.getElementById("stickyBar");
+  const header = document.querySelector(".header");
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      stickyBar.classList.toggle("visible", !entry.isIntersecting);
+    },
+    { threshold: 0 }
+  );
+  observer.observe(header);
 
   /* ABOUT */
   const aboutEl = document.getElementById("about");
