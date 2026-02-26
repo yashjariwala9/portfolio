@@ -4,15 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yash</title>
+  <meta name="description" content="Data Analyst specializing in business reporting, ERP integration, and workflow automation. Based in Surat, India.">
+  <meta property="og:title" content="Yash Jariwala | Data Analyst">
+  <meta property="og:description" content="Data Analyst specializing in business reporting, ERP integration, and workflow automation.">
+  <meta property="og:image" content="assets/YH.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 
+  <!-- Sticky nav bar shown on scroll -->
+  <div class="sticky-bar" id="stickyBar">
+    <span class="sticky-name" id="stickyName"></span>
+    <div class="sticky-social" id="stickySocial"></div>
+  </div>
+
   <header class="header">
     <div class="header-inner">
-      <img id="profileImage" class="profile-img" alt="Profile photo of Yash Jariwala">
+      <img id="profileImage" class="profile-img" alt="Profile photo of Yash Jariwala" fetchpriority="high">
       <div class="header-info">
         <h1 id="name"></h1>
         <p id="tagline" class="tagline"></p>
@@ -44,6 +57,10 @@
     </section>
 
   </main>
+
+  <noscript>
+    <p style="text-align:center;padding:40px;font-family:Arial,sans-serif">Please enable JavaScript to view this portfolio.</p>
+  </noscript>
 
   <script src="data.js"></script>
   <script src="script.js"></script>
